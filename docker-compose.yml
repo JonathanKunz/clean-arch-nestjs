@@ -19,7 +19,7 @@ services:
     volumes:
       - .:/usr/src/app
       - node_modules:/usr/src/app/node_modules
-    command: sh -c "yarn install --silent && yarn start:dev"
+    command: sh -c "yarn start:dev"
 
   postgres:
     image: postgres:alpine
